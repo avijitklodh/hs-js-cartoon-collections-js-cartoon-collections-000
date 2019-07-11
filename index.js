@@ -1,8 +1,9 @@
 function dwarfRollCall(dwarves) {
-var dwarfname = [];
-dwarves.forEach(function(name,number){
+dwarfname = [];
+for(i=0; i<(dwarves.length / 2) ;i++){
   dwarfname += number+1 + ". " + name + " "
-});
+};
+
 return dwarfname;
 }
 
@@ -23,12 +24,24 @@ for(var i=0; i<words.length;i++){
   }
  return false
 }
+
 function findTheCheese (foods) {
   for (var i=0; i<foods.length; i++)
     if (foods[i]=="cheddar"
   ||foods[i]=="gouda"
-  ||foods[i]=="camembert"){
+  ||foods[i]=="camembert"
+  ||foods[i] == "swiss"){
     return foods[i]
   }
   return "no cheese!"
 }
+function wordswithb(words){
+  var wordsb = [];
+  
+  for (var i=0; i<words.length;i++)
+  if (words[i].charAt(0) == "b"){
+    wordsb.push(words);
+  }
+  
+  return wordsb
+  }
