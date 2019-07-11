@@ -1,5 +1,5 @@
 function dwarfRollCall(dwarves) {
-var dwarfname = "";
+var dwarfname = [];
 dwarves.forEach(function(name,number){
   dwarfname += number+1 + ". " + name + " "
 });
